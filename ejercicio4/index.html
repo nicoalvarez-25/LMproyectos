@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nicolás Álvarez</title>
     <meta name="author" content="Nicolás Álvarez">
-    <meta name="description" content="Biografía de Nicolás Álvarez">
+    <meta name="description" content="Breve biografía y portafolio de Nicolás Álvarez">
     <link rel="icon" href="../imágenes/Gemini_Generated_Image_jolg9xjolg9xjolg.png" type="image/png">
 </head>
  <body> 
@@ -23,18 +23,42 @@
     </header>
     <!-- main desarrollando cada una de las secciones del header -->
     <main>
-        <section id="mi-infancia"><h2>Mi infancia</h2></section>
-        <p>Nací y me crié en Lugo, un hijo único que siempre tuvo el amor incondicional de mis padres. Mis mejores recuerdos son de las tardes jugando en el parque de Frigsa con mis amigos, un grupo inseparable que hacía cualquier día especial. Rodeado de una familia que me apoyó en todo momento, mi infancia fue tranquila y feliz, llena de calor de hogar y paseos por la ciudad. Mirando atrás, sé que tuve una niñez completamente normal y afortunada.</p>
-        <img src="../imágenes/niño por la muralla.jpg" alt="Niño pequeño de uno 5 años paseando por la muralla de Lugo" width="300px"> <aside>Yo con 5 años en la muralla romana de Lugo</aside>
+        <section id="mi-infancia"><h2>Mi infancia</h2>
+            <p>Nací y me crié en Lugo, un hijo único que siempre tuvo el amor incondicional de mis padres. Mis mejores recuerdos son de las tardes jugando en el parque de Frigsa con mis amigos, un grupo inseparable que hacía cualquier día especial. Rodeado de una familia que me apoyó en todo momento, mi infancia fue tranquila y feliz, llena de calor de hogar y paseos por la ciudad. Mirando atrás, sé que tuve una niñez completamente normal y afortunada.</p>
+             <img src="../imágenes/niño por la muralla.jpg" alt="Niño pequeño de uno 5 años paseando por la muralla de Lugo" width="300px"> <aside>Yo con 5 años en la muralla romana de Lugo</aside></section>
         <br><br>
-        <section id="mivida-actual"><h2>Mi vida actual</h2></section>
-        <p>A mis 23 años, mi vida es una transición entre la rutina y el futuro que estoy construyendo. Sigo viviendo en casa de mis padres, pero las tardes las dedico por completo a estudiar ASIR online. Es un desafío que me exige concentración y dedicación, mientras me esfuerzo por asimilar cada concepto de los sistemas informáticos. Esta etapa combina la comodidad del hogar con la ambición de dominar los sistemas.</p>
+        <section id="mivida-actual"><h2>Mi vida actual</h2>
+         <p>A mis 23 años, mi vida es una transición entre la rutina y el futuro que estoy construyendo. Sigo viviendo en casa de mis padres, pero las tardes las dedico por completo a estudiar ASIR online. Es un desafío que me exige concentración y dedicación, mientras me esfuerzo por asimilar cada concepto de los sistemas informáticos. Esta etapa combina la comodidad del hogar con la ambición de dominar los sistemas.</p></section>
         <br><br>
         <section id="proyectos"><h2>Proyectos</h2>
             <article>
                 <h3>App para vender máquinas de segunda mano</h3>
-                <img src="../imágenes/Gemini_Generated_Image_oin8lboin8lboin8.png" alt="interfaz de la app para comprar y vender máquinas de segunda mano" width="200px">
-
+                <p>VendingSwap es una aplicación web y móvil para comprar y vender máquinas de vending usadas. Pensada para ser fácil de usar, detrás hay una base sólida que la hace segura y rápida, gracias a conceptos clave de ASIR. Funciona sobre servidores estables, usa bases de datos eficientes para guardar toda la información y protege tus datos con buena seguridad.</p>
+                <img src="../imágenes/interfaz app compra-venta.png" alt="interfaz de la app para comprar y vender máquinas de segunda mano" width="200px">
+            </article>
+            <article>
+                <h3>Recuperar contraseña de usuario de Windows</h3>
+                <p>Nota: Esta es una práctica que realicé yo. <br> 
+                    El video referenciado a continuación es un recurso externo que ilustra el procedimiento.Esta metodología se basa en sustituir el archivo de Teclas Adhesivas (sethc.exe) por la Terminal de Comandos (cmd.exe) para lograr ejecutar comandos antes del inicio de sesión.El procedimiento inicia accediendo a las Opciones Avanzadas de la ventana de Recuperación de Windows para abrir la terminal. Desde ahí, se usa el Bloc de Notas para navegar a la ruta C:\Windows\System32. En esta ubicación, se localiza el archivo sethc.exe y se le cambia el nombre a sethc.bak (copia de seguridad). Inmediatamente, se localiza cmd.exe, se copia y la copia se renombra como sethc.exe.Al salir y reiniciar el sistema, el usuario debe pulsar la tecla $\text{Shift}$ cinco veces en la pantalla de inicio de sesión. Esto abrirá la terminal (gracias a la sustitución). Finalmente, se utiliza el comando net user [NombreDeUsuario] [NuevaContraseña] para cambiar la contraseña del usuario sin necesidad de ingresar al sistema.</p>
+                <iframe width="600" height="350" src="https://www.youtube.com/embed/ynFVtiI4agc" title="Recupera tu contraseña de usuario en Windows 11 sin perder datos en 2 minutos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" 
+            </article>
+            <article>
+                <h3>Instalar ubuntu server y windows en la misma máquina virtual</h3>
+                <ol>
+                    <li><h4>Configuración de la MV</h4>
+                    <p>Crea una sola MV con las siguientes especificaciones: RAM: 4 GB, CPU: 2 procesadores y un Disco Duro de 40 GB (VDI).</p></li>
+                    <li><h4>Proceso de Instalación</h4>
+                        <p>Se recomienda instalar Windows primero porque su gestor de arranque es menos flexible que el de Linux:</p>
+                        <ol>
+                            <li>Instalar Windows: Arranca la MV con la ISO de Windows. Durante el particionamiento, debes reducir la partición de Windows para dejar al menos 15-20 GB de espacio SIN ASIGNAR para Ubuntu Server. Finaliza la instalación de Windows.</li>
+                            <li>Instalar Ubuntu Server: Carga la ISO de Ubuntu. En el paso de particionamiento, elige la opción "Manual".</li>
+                            <li>Particionar Linux: Utiliza el espacio sin asignar para crear las particiones de Linux: una partición Raíz (/) (formato Ext4) y una partición swap (intercambio).</li>
+                            <li>Gestor de Arranque: El instalador de Ubuntu detectará Windows y configurará automáticamente el Gestor de Arranque GRUB.</li>
+                        </ol>
+                        <p>Al finalizar, cuando inicies la MV, el menú GRUB aparecerá para que elijas arrancar Windows o Ubuntu Server.</p>
+                    </li>
+                    <img src="../imágenes/captura de pantalla boot manager.png" alt="Captura de pantalla en la que se ve el gestor de arranque GRUB con las opciones de iniciar Ubuntu o Windows" width="700px">
+                </ol>
             </article>
         </section>
 
@@ -59,7 +83,7 @@
     </main>
 
     <footer>
-        <p>© 2025 Nicolás Álvarez Rivas</p>
+        <p>© 2025 Nicolás Álvarez Rivas | Todos los derechos reservados</p>
         <ul>
             <li><a href="https://github.com/nicoalvarez-25" target="_blank">GitHub</a></li>
         </ul>
