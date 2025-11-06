@@ -31,18 +31,18 @@
          <p>A mis 23 años, mi vida es una transición entre la rutina y el futuro que estoy construyendo. Sigo viviendo en casa de mis padres, pero las tardes las dedico por completo a estudiar ASIR online. Es un desafío que me exige concentración y dedicación, mientras me esfuerzo por asimilar cada concepto de los sistemas informáticos. Esta etapa combina la comodidad del hogar con la ambición de dominar los sistemas.</p></section>
         <br><br>
         <section id="proyectos"><h2>Proyectos</h2>
-            <article>
+            <article>             <!-- Proyecto totalmente inventado, simplemente un ejemplo -->
                 <h3>App para vender máquinas de segunda mano</h3>
                 <p>VendingSwap es una aplicación web y móvil para comprar y vender máquinas de vending usadas. Pensada para ser fácil de usar, detrás hay una base sólida que la hace segura y rápida, gracias a conceptos clave de ASIR. Funciona sobre servidores estables, usa bases de datos eficientes para guardar toda la información y protege tus datos con buena seguridad.</p>
                 <img src="../imágenes/interfaz app compra-venta.png" alt="interfaz de la app para comprar y vender máquinas de segunda mano" width="200px">
             </article>
-            <article>
+           <article>         <!-- Práctica de ISO -->
                 <h3>Recuperar contraseña de usuario de Windows</h3>
                 <p>Nota: Esta es una práctica que realicé yo. <br> 
                     El video referenciado a continuación es un recurso externo que ilustra el procedimiento.Esta metodología se basa en sustituir el archivo de Teclas Adhesivas (sethc.exe) por la Terminal de Comandos (cmd.exe) para lograr ejecutar comandos antes del inicio de sesión.El procedimiento inicia accediendo a las Opciones Avanzadas de la ventana de Recuperación de Windows para abrir la terminal. Desde ahí, se usa el Bloc de Notas para navegar a la ruta C:\Windows\System32. En esta ubicación, se localiza el archivo sethc.exe y se le cambia el nombre a sethc.bak (copia de seguridad). Inmediatamente, se localiza cmd.exe, se copia y la copia se renombra como sethc.exe.Al salir y reiniciar el sistema, el usuario debe pulsar la tecla $\text{Shift}$ cinco veces en la pantalla de inicio de sesión. Esto abrirá la terminal (gracias a la sustitución). Finalmente, se utiliza el comando net user [NombreDeUsuario] [NuevaContraseña] para cambiar la contraseña del usuario sin necesidad de ingresar al sistema.</p>
                 <iframe width="600" height="350" src="https://www.youtube.com/embed/ynFVtiI4agc" title="Recupera tu contraseña de usuario en Windows 11 sin perder datos en 2 minutos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" 
             </article>
-            <article>
+            <article>     <!-- Práctica de ISO -->
                 <h3>Instalar ubuntu server y windows en la misma máquina virtual</h3>
                 <ol>
                     <li><h4>Configuración de la MV</h4>
@@ -57,25 +57,25 @@
                         </ol>
                         <p>Al finalizar, cuando inicies la MV, el menú GRUB aparecerá para que elijas arrancar Windows o Ubuntu Server.</p>
                     </li>
-                    <img src="../imágenes/captura de pantalla boot manager.png" alt="Captura de pantalla en la que se ve el gestor de arranque GRUB con las opciones de iniciar Ubuntu o Windows" width="700px">
                 </ol>
+                <img src="../imágenes/captura de pantalla boot manager.png" alt="Captura de pantalla en la que se ve el gestor de arranque GRUB con las opciones de iniciar Ubuntu o Windows" width="700px">
             </article>
         </section>
 
         <br><br>
         <!-- formulario de contacto -->
         <section id="contacto"><h2>Contacto</h2></section>
-        <form action="Formulario de contacto" >
-            <label for="nombre">Nombre</label>
+        <form action="Formulario de contacto">
+            <label for="nombre">Nombre:</label>
             <input type="text" name="nombre" placeholder="Nombre">
             <br><br>
-            <label for="correo electrónico">Correo electrónico</label>
+            <label for="correo-electrónico">Correo electrónico:</label>
             <input type="email" name="correo electrónico" placeholder="Correo electrónico" required>
             <br><br>
-            <label for="asunto">Asunto</label>
+            <label for="asunto">Asunto:</label>
             <input type="text" name="asunto" placeholder="Asunto">
             <br><br>
-            <label for="mensaje">Mensaje</label><br>
+            <label for="mensaje">Mensaje:</label><br>
             <textarea name="mensaje" rows="5" cols="35"></textarea>
             <br><br>
             <input type="submit" name="Enviar">
